@@ -1,16 +1,16 @@
-# Project Title
+# Rap Garden
 
-## Date: 1/26/2021
+## Date: 3/28/2022
 
-### By: Michael Lackey
+### By: Guillermo Palencia
 
 #### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
 
 ---
 
-### **_Description_**
+### **_Enter the Rap Garden_**
 
-#### A brief description of the project, what it's about, when and what you made it for, etc. ...
+#### The rap garden is a query database that will give you random songs from an artist' albums.
 
 ---
 
@@ -30,7 +30,7 @@
 
 ##### A Trello board was used to keep track of development progress and can be viewed [here](URL).
 
-##### The project itself was deployed and can be viewed [here](URL).
+##### The project itself was deployed and can be viewed [here](URL). to add.
 
 ---
 
