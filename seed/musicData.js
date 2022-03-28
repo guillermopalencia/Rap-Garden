@@ -7,7 +7,6 @@ const main = async () => {
   const artist1 = await new Artist({
     name: 'Kanye West',
     numberofalbums: '12',
-    albums: '',
     about:
       'One of the most influential and critically lauded artists of the early 21st century, Kanye West went from hip-hop beatmaker to worldwide hitmaker as his production work for artists such as Jay-Z led to a major-label recording contract and, ultimately, a wildly successful solo career that counted an unbroken string of chart-topping, multi-platinum albums and nearly two-dozen Grammy Awards.'
   })
@@ -16,7 +15,6 @@ const main = async () => {
   const artist2 = await new Artist({
     name: 'Kendrick Lamar',
     numberofalbums: '7',
-    albums: '',
     about:
       'Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him.'
   })
@@ -26,7 +24,6 @@ const main = async () => {
     artist: artist2._id,
     name: 'To Pimp A Butterfly',
     numofsongs: '16',
-    songs: '',
     relaseyear: '2015'
   })
   album1.save()
@@ -35,7 +32,6 @@ const main = async () => {
     artist: artist2._id,
     name: 'good kid m.A.A.d city',
     numofsongs: '12',
-    songs: '',
     relaseyear: '2012'
   })
   album2.save()
@@ -44,7 +40,6 @@ const main = async () => {
     artist: artist1._id,
     name: 'The Life of Pablo',
     numofsongs: '20',
-    songs: '',
     relaseyear: '2016'
   })
   album3.save()
@@ -53,7 +48,6 @@ const main = async () => {
     artist: artist1._id,
     name: 'My Beautiful Dark Twisted Fantasy',
     numofsongs: '12',
-    songs: '',
     relaseyear: '2010'
   })
   album4.save()
@@ -137,8 +131,308 @@ const main = async () => {
       album: album4._id,
       name: 'Who Will Survive In America',
       duration: '1:38'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: "Sherane a.k.a Master Splinter's Daughter",
+      duration: '4:33'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: "Bitch, Don't Kill My Vibe",
+      duration: '5:10'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Backseat Freestyle',
+      duration: '3:32'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'The Art of Peer Pressure',
+      duration: '5:24'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Money Trees',
+      duration: '6:26',
+      features: 'Jay Rock'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Poetic Justice',
+      duration: '5:00',
+      features: 'Drake'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Good Kid',
+      duration: '3:34'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'M.A.A.D City',
+      duration: '5:50',
+      features: 'MC Eiht'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Swimming Pools (Drank)',
+      duration: '5:13'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: "Sing About Me, I'm Dying of Thirst",
+      duration: '12:03'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Real',
+      duration: '7:23',
+      features: 'Anna Wise'
+    },
+    {
+      artist: artist2._id,
+      album: album2._id,
+      name: 'Compton',
+      duration: '4:08',
+      features: 'Dr Dre'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: "Wesley's Theory",
+      duration: '4:47',
+      features: 'Thunder Cat'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'For Free? (Interlude)',
+      duration: '2:10'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'King Kunta',
+      duration: '3:54'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Institutionalized',
+      duration: '4:31',
+      features: 'Bilal, Anna Wise and Snoop Dogg'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'These Walls',
+      duration: '5:00',
+      features: 'Bilal, Anna Wise and Thundercat'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'U',
+      duration: '4:28'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Alright',
+      duration: '3:39'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'For Sale? (Interlude)',
+      duration: '4:51'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Momma',
+      duration: '4:43'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Hood Politics',
+      duration: '4:52'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'How Much a Dollar Cost',
+      duration: '4:21',
+      features: 'James Fauntleroy and Ronald Isley'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Complexion (A Zulu Love)',
+      duration: '4:23',
+      features: 'Rapsody'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'The Blacker the Berry',
+      duration: '5:28'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: "You Ain't Gotta Lie (Momma Said)",
+      duration: '4:01'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'I',
+      duration: '5:36'
+    },
+    {
+      artist: artist2._id,
+      album: album1._id,
+      name: 'Mortal Man',
+      duration: '12:07'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Ultralight Beam',
+      duration: '5:20'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Father Stretch My Hands, Pt. 1',
+      duration: '2:15'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Pt. 2',
+      duration: '2:10'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Famous',
+      duration: '3:16'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Feedback',
+      duration: '2:27'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Low Lights',
+      duration: '2:11'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Highlighs',
+      duration: '3:19'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Freestyle 4',
+      duration: '2:03'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'I Love Kanye',
+      duration: '0:44'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Waves',
+      duration: '3:01'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'FML',
+      duration: '3:56'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Real Friends',
+      duration: '4:11'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: '"Wolves"',
+      duration: '5:01'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: "Frank's Track",
+      duration: '0:38'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Siiiiiiiiilver Surffffeeeeer Intermission',
+      duration: '0:56'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: '30 Hours',
+      duration: '5:23'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'No More Parties in LA',
+      duration: '6:14'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Facts (Charlie Heat Version)',
+      duration: '3:20'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Fade',
+      duration: '3:13'
+    },
+    {
+      artist: artist1._id,
+      album: album3._id,
+      name: 'Saint Pablo',
+      duration: '6:12'
     }
   ]
+  await Song.insertMany(songs)
+  console.log('Created songs!')
 }
 
 const run = async () => {

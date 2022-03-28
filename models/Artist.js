@@ -3,8 +3,7 @@ const { Schema } = require('mongoose')
 const Artist = new Schema(
   {
     name: { type: String, required: true },
-    numberofalbums: { type: Integer, required: true },
-    albums: { type: Schema.Types.ObjectId, ref: 'Album' },
+    numberofalbums: { type: String, required: true },
     about: { type: String, requird: true }
   },
   { timestamps: true }
