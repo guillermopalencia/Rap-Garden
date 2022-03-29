@@ -20,8 +20,8 @@ const Music = () => {
       <section>
         <div>
           {artists.map((artist) => (
-            <div>
-              <Artist name={artist.name} about={artist.about} key={artist.id} />
+            <div key={artist._id}>
+              <Artist name={artist.name} about={artist.about} />
             </div>
           ))}
         </div>
