@@ -8,6 +8,16 @@ const allSongs = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
+
+const allArtist = async (req, res) => {
+  try {
+    const artist = await Artist.find()
+    return res.status(200).json({ artist })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const allAlbums = async (req, res) => {
   try {
     const albums = await Album.find()
@@ -76,15 +86,6 @@ const getSongs = async (req, res) => {
   }
 }
 
-const getArtist = async (req, res) => {
-  try {
-    const artist = await Artist.find()
-    return res.status(200).json({ albums })
-  } catch (error) {
-    return res.status(500).send(error.message)
-  }
-}
-
 module.exports = {
   allSongs,
   allAlbums,
@@ -92,5 +93,5 @@ module.exports = {
   getSongs,
   getSongsByAlbum,
   getAlbumsByArtist,
-  getArtist
+  allArtist
 }

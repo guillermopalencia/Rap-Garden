@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Header from './components/Header'
+import Artist from './components/Artist'
+import Music from './pages/Music'
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/artists" element={<Music />} />
         </Routes>
       </main>
     </div>

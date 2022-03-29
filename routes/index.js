@@ -14,6 +14,8 @@ router.get('/songs/:id', controllers.getSongs)
 
 router.get('/albums/songs/:id', controllers.getSongsByAlbum)
 
+router.get('/artists', controllers.allArtist)
+
 router.get('/artist/albums/:id', controllers.getAlbumsByArtist)
 
 module.exports = router
