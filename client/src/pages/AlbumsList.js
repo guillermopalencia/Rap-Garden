@@ -1,30 +1,22 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Albums from '../components/Albums'
 
 const AlbumsList = () => {
   const [albums, setAlbums] = useState([])
 
-  const [artist, setArtist] = useState([])
-
-  useEffect(() => {
-    const getArtist = async () => {
-      const response = await axios.get('http://localhost:3001/api/artists')
-      setArtist(response.data.artist[0]._id)
-    }
-    getArtist()
-  }, [])
+  const { id } = useParams()
 
   useEffect(() => {
     const getAlbumsByArtist = async () => {
       const response = await axios.get(
-        `http://localhost:3001/api/artist/albums/${artist}`
+        `http://localhost:3001/api/artist/albums/${id}`
       )
       setAlbums(response.data.albumList)
     }
     getAlbumsByArtist()
-  }, [artist])
+  }, [])
   console.log(albums)
 
   let navigate = useNavigate()

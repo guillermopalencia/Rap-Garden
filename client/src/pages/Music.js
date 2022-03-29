@@ -14,6 +14,12 @@ const Music = () => {
     getArtist()
   }, [])
 
+  let navigate = useNavigate()
+
+  const showAlbums = (id) => {
+    navigate(`/artist/albums/${id}`)
+  }
+
   return (
     <div>
       <h2> All Artists </h2>
@@ -21,7 +27,11 @@ const Music = () => {
         <div>
           {artists.map((artist) => (
             <div key={artist._id}>
-              <Artist name={artist.name} about={artist.about} />
+              <Artist
+                name={artist.name}
+                about={artist.about}
+                onClick={() => showAlbums(artist._id)}
+              />
             </div>
           ))}
         </div>

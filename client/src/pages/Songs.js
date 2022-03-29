@@ -31,7 +31,7 @@ const Songs = () => {
   console.log(songs)
   return (
     <div>
-      <h2> Songs </h2>
+      <h2> TrackList </h2>
       <section>
         <div>
           {songs.map((song) => (

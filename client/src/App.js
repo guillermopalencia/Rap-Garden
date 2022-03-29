@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/artists" element={<Music />} />
-          <Route path="/albums" element={<AlbumsList />} />
+          <Route path="/artist/albums/:id" element={<AlbumsList />} />
           <Route path="/albums/songs/:id" element={<Songs />} />
         </Routes>
       </main>
