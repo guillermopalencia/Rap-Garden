@@ -76,11 +76,21 @@ const getSongs = async (req, res) => {
   }
 }
 
+const getArtist = async (req, res) => {
+  try {
+    const artist = await Artist.find()
+    return res.status(200).json({ albums })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   allSongs,
   allAlbums,
   getAlbum,
   getSongs,
   getSongsByAlbum,
-  getAlbumsByArtist
+  getAlbumsByArtist,
+  getArtist
 }
