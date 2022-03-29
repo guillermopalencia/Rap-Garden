@@ -24,7 +24,7 @@ const main = async () => {
     artist: artist2._id,
     name: 'To Pimp A Butterfly',
     numofsongs: '16',
-    relaseyear: '2015'
+    releaseyear: '2015'
   })
   album1.save()
 
@@ -32,7 +32,7 @@ const main = async () => {
     artist: artist2._id,
     name: 'good kid m.A.A.d city',
     numofsongs: '12',
-    relaseyear: '2012'
+    releaseyear: '2012'
   })
   album2.save()
 
@@ -40,7 +40,7 @@ const main = async () => {
     artist: artist1._id,
     name: 'The Life of Pablo',
     numofsongs: '20',
-    relaseyear: '2016'
+    releaseyear: '2016'
   })
   album3.save()
 
@@ -48,7 +48,7 @@ const main = async () => {
     artist: artist1._id,
     name: 'My Beautiful Dark Twisted Fantasy',
     numofsongs: '12',
-    relaseyear: '2010'
+    releaseyear: '2010'
   })
   album4.save()
 

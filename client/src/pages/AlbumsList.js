@@ -15,7 +15,6 @@ const AlbumsList = () => {
     }
     getArtist()
   }, [])
-  console.log(artist)
 
   useEffect(() => {
     const getAlbumsByArtist = async () => {
@@ -26,8 +25,13 @@ const AlbumsList = () => {
     }
     getAlbumsByArtist()
   }, [artist])
-
   console.log(albums)
+
+  let navigate = useNavigate()
+
+  const showSongs = (id) => {
+    navigate(`/albums/songs/${id}`)
+  }
 
   return (
     <div>
@@ -39,7 +43,8 @@ const AlbumsList = () => {
               <Albums
                 name={album.name}
                 numofsongs={album.numofsongs}
-                relaseyear={album.relaseyear}
+                releaseyear={album.releaseyear}
+                onClick={() => showSongs(album._id)}
               />
             </div>
           ))}
