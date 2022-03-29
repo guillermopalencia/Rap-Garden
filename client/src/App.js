@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Header from './components/Header'
 import Artist from './components/Artist'
 import Music from './pages/Music'
+import AlbumsList from './pages/AlbumsList'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/artists" element={<Music />} />
+          <Route path="/albums" element={<AlbumsList />} />
         </Routes>
       </main>
     </div>
