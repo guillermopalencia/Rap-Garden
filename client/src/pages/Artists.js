@@ -3,7 +3,7 @@ import Artist from '../components/Artist'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-const Music = () => {
+const Artists = () => {
   const [artists, setArtists] = useState([])
 
   useEffect(() => {
@@ -13,6 +13,7 @@ const Music = () => {
     }
     getArtist()
   }, [])
+  console.log(artists)
 
   let navigate = useNavigate()
 
@@ -30,6 +31,7 @@ const Music = () => {
               <Artist
                 name={artist.name}
                 about={artist.about}
+                numberofalbums={artist.numberofalbums}
                 onClick={() => showAlbums(artist._id)}
               />
             </div>
@@ -40,4 +42,4 @@ const Music = () => {
   )
 }
 
-export default Music
+export default Artists

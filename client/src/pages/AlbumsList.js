@@ -29,13 +29,14 @@ const AlbumsList = () => {
     <div>
       <h2> Albums </h2>
       <section>
-        <div>
+        <div className="container">
           {albums.map((album) => (
             <div key={album._id}>
               <Albums
                 name={album.name}
                 numofsongs={album.numofsongs}
                 releaseyear={album.releaseyear}
+                image={album.image}
                 onClick={() => showSongs(album._id)}
               />
             </div>

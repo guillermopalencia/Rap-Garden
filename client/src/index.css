@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.AlbumsList {
+  margin: auto;
+  background-color: blanchedalmond;
+  width: 22em;
+  height: 27em;
+}
+
+.AlbumsList:hover {
+  cursor: pointer;
+}
+
+.Songlist {
+  background-color: rgb(92, 90, 90);
+  margin: auto;
+  width: 20em;
+  border: 1px solid black;
+}
+
+.ArtistList {
+  background-color: goldenrod;
+  width: 40em;
+  margin: auto;
+}
+
+.ArtistList:hover {
+  cursor: pointer;
+}
+
+.Add {
+  width: 7em;
+  height: 2.7em;
+  margin-bottom: 4px;
+}
+
+.Albumimg {
+  width: 17em;
+  height: auto;
+  border: 2px solid black;
+}
+
+.space {
+  padding: 0.1px;
+  text-decoration: underline;
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1em auto;
+  width: 70em;
+}

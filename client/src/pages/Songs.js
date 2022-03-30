@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
-import SongsComponent from '../components/SongsComponent'
 
 const Songs = () => {
   const [songs, setSongs] = useState([])
@@ -31,15 +30,15 @@ const Songs = () => {
   console.log(songs)
   return (
     <div>
-      <h2> TrackList </h2>
+      <h1> TrackList </h1>
       <section>
         <div>
           {songs.map((song) => (
-            <div key={song._id}>
-              {song.name}
-              {song.features}
-              <br></br>
-              {song.duration}
+            <div key={song._id} className="Songlist">
+              <h3>{song.name}</h3>
+              <p>{song.features}</p>
+              <p>{song.duration}</p>
+              <button className="Add">Add to Listen Later </button>
             </div>
           ))}
         </div>
