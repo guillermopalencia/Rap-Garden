@@ -12,6 +12,8 @@ router.get('/albums/:id', controllers.getAlbum)
 
 router.get('/songs/:id', controllers.getSongs)
 
+router.post('/songs/:id', controllers.getSongs)
+
 router.get('/albums/songs/:id', controllers.getSongsByAlbum)
 
 router.get('/artists', controllers.allArtist)

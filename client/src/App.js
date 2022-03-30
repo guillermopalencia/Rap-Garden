@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Artists from './pages/Artists'
 import AlbumsList from './pages/AlbumsList'
 import Songs from './pages/Songs'
+import ListenLater from './pages/ListenLater'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/artists" element={<Artists />} />
           <Route path="/artist/albums/:id" element={<AlbumsList />} />
           <Route path="/albums/songs/:id" element={<Songs />} />
+          <Route path="/songs/:id" element={<ListenLater />} />
         </Routes>
       </main>
     </div>
