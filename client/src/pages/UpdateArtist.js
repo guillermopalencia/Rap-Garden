@@ -1,11 +1,13 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
-const AddArtist = () => {
+const UpdateArtist = (props) => {
   const [name, setName] = useState('')
   const [numberofalbums, setNumberOfAlbums] = useState('')
   const [about, setAbout] = useState('')
+
+  const { id } = useParams()
 
   const handleNameChange = (e) => {
     e.preventDefault()
@@ -33,7 +35,7 @@ const AddArtist = () => {
       }
       e.preventDefault()
       axios
-        .post('http://localhost:3001/api/artists', details)
+        .put(`http://localhost:3001/api/updateartist/${id}`, details)
         .catch((err) => console.log(err))
       navigate(`/artists`)
     }
@@ -43,7 +45,12 @@ const AddArtist = () => {
     <form onSubmit={handleOnSubmit}>
       <label>
         name:
-        <input onChange={handleNameChange} type="text" name="name" />
+        <input
+          onChange={handleNameChange}
+          type="text"
+          name="name"
+          value={props.name}
+        />
       </label>
       <label>
         Number Of albums:
@@ -51,15 +58,21 @@ const AddArtist = () => {
           onChange={handleNumberOfAlbumsChange}
           type="text"
           name="numberofalbums"
+          value={props.numberofalbums}
         />
       </label>
       <label>
         About:
-        <input onChange={handleAboutChange} type="text" name="About" />
+        <input
+          onChange={handleAboutChange}
+          type="text"
+          name="about"
+          value={props.about}
+        />
       </label>
       <button type="submit">Submit new Artist</button>
     </form>
   )
 }
 
-export default AddArtist
+export default UpdateArtist

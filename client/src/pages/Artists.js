@@ -33,6 +33,7 @@ const Artists = () => {
                 about={artist.about}
                 numberofalbums={artist.numberofalbums}
                 onClick={() => showAlbums(artist._id)}
+                id={artist._id}
               />
             </div>
           ))}

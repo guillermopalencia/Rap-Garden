@@ -22,4 +22,6 @@ router.post('/artists', controllers.createArtist)
 
 router.get('/artist/albums/:id', controllers.getAlbumsByArtist)
 
+router.put('/updateartist/:id', controllers.updateArtist)
+
 module.exports = router

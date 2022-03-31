@@ -9,6 +9,7 @@ import AlbumsList from './pages/AlbumsList'
 import Songs from './pages/Songs'
 import ListenLater from './pages/ListenLater'
 import AddArtist from './pages/AddArtist'
+import UpdateArtist from './pages/UpdateArtist'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/albums/songs/:id" element={<Songs />} />
           <Route path="/songs/:id" element={<ListenLater />} />
           <Route path="/addartist" element={<AddArtist />} />
+          <Route path="/updateartist/:id" element={<UpdateArtist />} />
         </Routes>
       </main>
     </div>
