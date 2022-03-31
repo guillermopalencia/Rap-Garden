@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Artist from '../components/Artist'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Artists = () => {
   const [artists, setArtists] = useState([])
@@ -38,6 +39,8 @@ const Artists = () => {
             </div>
           ))}
         </div>
+        <br></br>
+        <Link to="/addartist">Add Artist</Link>
       </section>
     </div>
   )
