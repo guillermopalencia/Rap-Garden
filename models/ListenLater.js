@@ -2,8 +2,7 @@ const { Schema } = require('mongoose')
 
 const LikedSongs = new Schema(
   {
-    song: { type: Schema.Types.ObjectId, ref: 'Song' },
-    artist: { type: Schema.Types.ObjectId, ref: 'Artist' }
+    songs: [{ type: Schema.Types.ObjectId, ref: 'Song' }]
   },
   { timestamps: true }
 )
