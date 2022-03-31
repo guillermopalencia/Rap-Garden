@@ -1,5 +1,4 @@
-const AddArtist = require('../models/AddArtist')
-const { Album, Song, Artist } = require('../models/index')
+const { Album, Song, Artist, AddArtist } = require('../models/index')
 
 const allSongs = async (req, res) => {
   try {
@@ -89,9 +88,9 @@ const getSongs = async (req, res) => {
 
 const createArtist = async (req, res) => {
   try {
-    const review = await new AddArtist(req.body)
-    await review.save()
-    return res.status(201).json({ AddArtist })
+    const artist = await new AddArtist(req.body)
+    await artist.save()
+    return res.status(201).json({ artist })
   } catch (error) {
     return res.status(500).send(error.message)
   }

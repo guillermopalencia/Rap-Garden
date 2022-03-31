@@ -27,7 +27,7 @@ const Songs = () => {
     }
     getSongs()
   }, [])
-  console.log(songs)
+
   return (
     <div>
       <h1> TrackList </h1>
