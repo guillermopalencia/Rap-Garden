@@ -107,6 +107,15 @@ const updateArtist = async (req, res) => {
   }
 }
 
+const deleteArtist = async (req, res) => {
+  try {
+    const deleted = await Artist.findByIdAndDelete(req.params.id, req.body)
+    return res.status(201).json(deleted)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   allSongs,
   allAlbums,
@@ -116,5 +125,6 @@ module.exports = {
   getAlbumsByArtist,
   allArtist,
   createArtist,
-  updateArtist
+  updateArtist,
+  deleteArtist
 }

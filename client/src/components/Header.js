@@ -8,7 +8,6 @@ const Header = () => {
         <br></br>
         <Link to="/artists">Artists</Link>
         <Link to="/songs/:id">songs</Link>
-        <Link to="addartist">add</Link>
       </nav>
     </header>
   )
