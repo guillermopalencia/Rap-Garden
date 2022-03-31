@@ -1,27 +1,12 @@
 import { useNavigate } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
 
 const Artist = (props) => {
-  // const { id } = useParams()
   let navigate = useNavigate()
-
-  // const [ids, setIds] = useState()
 
   const update = (id) => {
     navigate(`/updateartist/${id}`)
   }
-
-  // useEffect(() => {
-  //   const deleteArtist = async () => {
-  //     const response = await axios.delete(
-  //       `http://localhost:3001/api/artist/${ids}`
-  //     )
-  //     axios.delete(response)
-  //   }
-  //   deleteArtist()
-  // }, [])
 
   const deleteArtist = async (id) => {
     await axios.delete(`http://localhost:3001/api/artist/${id}`)

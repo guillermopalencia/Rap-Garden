@@ -63,3 +63,24 @@ code {
   grid-template-columns: 1em auto;
   width: 70em;
 }
+
+.Home {
+  background-image: url('https://pbs.twimg.com/media/D33kdplUEAIeEQW.jpg:large');
+  height: 1200px;
+  background-size: 100% 100%;
+  color: white;
+  background-attachment: local;
+}
+
+body {
+  background-image: url(https://images.genius.com/049e280f44c1f61fc2ba921d70d2c206.1000x1000x1.png);
+  margin: 0;
+  height: 100%;
+  background-size: cover;
+  background-attachment: local scroll;
+}
+
+.click:hover {
+  transform: scale(1.2);
+  transition: 0.25s;
+}

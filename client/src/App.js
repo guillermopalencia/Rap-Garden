@@ -14,8 +14,8 @@ import UpdateArtist from './pages/UpdateArtist'
 function App() {
   return (
     <div className="App">
+      <header className="App-header"></header>
       <Header />
-      <header className="App-header">{/* probably nav here */}</header>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
