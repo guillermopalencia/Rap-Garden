@@ -4,7 +4,8 @@ const Artist = new Schema(
   {
     name: { type: String, required: true },
     numberofalbums: { type: String, required: true },
-    about: { type: String, requird: true }
+    about: { type: String, required: true },
+    image: { type: String, required: true }
   },
   { timestamps: true }
 )

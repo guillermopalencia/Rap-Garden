@@ -33,6 +33,7 @@ const Artists = () => {
                 name={artist.name}
                 about={artist.about}
                 numberofalbums={artist.numberofalbums}
+                image={artist.image}
                 onClick={() => showAlbums(artist._id)}
                 id={artist._id}
               />
