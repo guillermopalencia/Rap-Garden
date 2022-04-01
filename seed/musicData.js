@@ -75,7 +75,7 @@ const main = async () => {
 
   const album4 = await new Album({
     artist: artist1._id,
-    name: 'My Beautiful Dark Twisted Fantasy',
+    name: 'M.B.D.T.F',
     numofsongs: '12',
     releaseyear: '2010',
     image: 'https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f'

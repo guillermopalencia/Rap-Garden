@@ -4,33 +4,33 @@
 
 ### By: Guillermo Palencia
 
-#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
+#### [GitHub](https://github.com/guillermopalencia) | [LinkedIn](https://www.linkedin.com/in/guillermo-palencia/)
 
 ---
 
 ### **_Enter the Rap Garden_**
 
-#### The rap garden is a query database that will give you random songs from an artist' albums.
+#### The rap garden is a collection database of different rap artist. Enter the Rap Garden if you're looking for a new selection of unique and interesting music.
 
 ---
 
 ### **_Technologies Used_**
 
-- Technology 1
-- Technology 2
-  - Sub-item 1
-  - Sub-item 2
-- Technology 3
+- MongoDB
+- JavaScript
+- React
+  -React Router
+  -Router Dom
 
 ---
 
 ### **_Getting Started_**
 
-##### Sign up and sign in as a new user and then walk through the Ranger creation page to begin your warband.
+##### You've been invited to Enter the Rap Garden. Let Kanye shine the light on you to enter and discover rap enlightenment.
 
-##### A Trello board was used to keep track of development progress and can be viewed [here](URL).
+##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/gsw7XYk5/project-2-rap-garden).
 
-##### The project itself was deployed and can be viewed [here](URL). to add.
+##### The project itself was deployed and can be viewed [here](https://cherry-crumble-36177.herokuapp.com/). to add.
 
 ---
 
@@ -38,26 +38,25 @@
 
 ##### image header 1
 
-![Smile](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.PDlm3trgAkY6pGPcbRt4SQHaEK%26pid%3DApi&f=1)
+![Home Page](https://imgur.com/a/E2s8XpL)
 
 ##### image header 2
 
-![Scared](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.buntINTHFLyDODyMKXNYcgHaEK%26pid%3DApi&f=1)
+![First Directory](https://imgur.com/a/ogKi0x3)
 
 ---
 
 ### **_Future Updates_**
 
-- [ ] Future Update 1
-- [ ] Future Update 2
-- [x] Completed Update
-- [x] ~~Strikethrough~~ Items Also
+- [ ] Create conditional rendering for nav bar on home page
+- [ ] Allow users to create songs and albums as well
+- [x] Add More Artist
 
 ---
 
 ### **_Credits_**
 
-##### Funny Images: [DuckDuckGo Search](http://www.duckduckgo.com)
+##### Artist Images: [Gogle Search](https://google.com)
 
 ##### Markdown Guide: [ia.net](https://ia.net/writer/support/general/markdown-guide)
 
