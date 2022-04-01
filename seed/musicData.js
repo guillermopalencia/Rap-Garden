@@ -24,6 +24,26 @@ const main = async () => {
   })
   artist2.save()
 
+  const artist3 = await new Artist({
+    name: 'SABA',
+    numberofalbums: '3',
+    about:
+      'A successful black independent artist, Saba has rooted his career in an authenticity and musicality that’s made him one of this generation’s most important and unique voices. The Chicago polymath is working on the follow-up to his critically-acclaimed 2018 album CARE FOR ME, for which he earned honors as one of the Tribune’s Chicagoans of the Year and has performed 100+ shows worldwide.',
+    image:
+      'https://townsquare.media/site/812/files/2017/05/saba-1.jpg?w=980&q=75'
+  })
+  artist3.save()
+
+  const artist4 = await new Artist({
+    name: 'J.I.D',
+    numberofalbums: '2',
+    about:
+      "Born and raised in East Atlanta, J.I.D -- a name adopted and adapted from what his grandmother called him as a jittery child -- first appeared on the Atlanta hip-hop scene with his debut EP, Dicaprio, in 2015. Growing up, J.I.D's first connection with music was through his parents' collection of classic funk and soul LPs. After a stint at Hampton University playing football, J.I.D also hooked up with fellow MCs as part of the Spillage Village collective. By 2012, he had dropped out of college to focus on music, and in 2014 he headed out on what would be a productive tour.",
+    image:
+      'https://snworksceo.imgix.net/dpn-34s/8808e8e2-6d23-4958-8c39-a8c60a91a1dd.sized-1000x1000.png?w=1000'
+  })
+  artist4.save()
+
   const album1 = await new Album({
     artist: artist2._id,
     name: 'To Pimp A Butterfly',
@@ -81,6 +101,46 @@ const main = async () => {
       'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Yeezus_album_cover.png/220px-Yeezus_album_cover.png'
   })
   album6.save()
+
+  const album7 = await new Album({
+    artist: artist3._id,
+    name: 'Care For Me',
+    numofsongs: '10',
+    releaseyear: '2018',
+    image:
+      'https://townsquare.media/site/812/files/2018/03/Saba-Care-For-Me-cover.jpg'
+  })
+  album7.save()
+
+  const album8 = await new Album({
+    artist: artist3._id,
+    name: 'Few Good Things',
+    numofsongs: '14',
+    releaseyear: '2022',
+    image:
+      'https://media.pitchfork.com/photos/61faf9857abffafea7cf05e3/1:1/w_600/Saba-Few-Good-Things.jpg'
+  })
+  album8.save()
+
+  const album9 = await new Album({
+    artist: artist4._id,
+    name: 'The Never Story',
+    numofsongs: '12',
+    releaseyear: '2017',
+    image:
+      'https://upload.wikimedia.org/wikipedia/en/c/ca/J.I.D_%E2%80%93_The_Never_Story.png'
+  })
+  album9.save()
+
+  const album10 = await new Album({
+    artist: artist4._id,
+    name: 'DiCaprio 2',
+    numofsongs: '14',
+    releaseyear: '2018',
+    image:
+      'https://media.pitchfork.com/photos/5c094d03869f3505f5adfbf2/1:1/w_600/dicaprio2_JID.jpg'
+  })
+  album10.save()
 
   const songs = [
     {
@@ -606,6 +666,323 @@ const main = async () => {
       album: album5._id,
       name: 'GOD.',
       duration: '4:08'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'BUSY / SIRENS',
+      duration: '5:29'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'BROKEN GIRLS',
+      duration: '4:37'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'LIFE',
+      duration: '2:42'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'CALLIGRAPHY',
+      duration: '3:04'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'FIGHTER',
+      duration: '4:42'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'SMILE',
+      duration: '3:28'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'LOGOUT',
+      duration: '2:30'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'GREY',
+      duration: '4:00'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'PROM / KING',
+      duration: '7:31'
+    },
+    {
+      artist: artist3._id,
+      album: album7._id,
+      name: 'HEAVEN ALL AROUND ME',
+      duration: '3:32'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Free Samples',
+      duration: '2:07',
+      features: 'Cheflee'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'One Way or Every N**** With A Budget',
+      duration: '2:45'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: "Survivor's Guilt",
+      duration: '3:42',
+      features: 'G Herbo'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'an Interlude Called "Circus',
+      duration: '1:02',
+      features: 'Eryn Allen Kane'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Fearmonger',
+      duration: '3:41',
+      features: 'Daoud'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Come My Way',
+      duration: '3:10',
+      features: 'Krayzie Bone'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Still',
+      duration: '3:45',
+      features: '6LACK, Smino'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'A Simpler Time',
+      duration: '3:33',
+      features: 'Mereba'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Solider',
+      duration: '3:05',
+      features: 'Pivot Gang'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'If I Had A Dollar',
+      duration: '3:13',
+      features: 'Benjamin Earl Turner'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Stop That',
+      duration: '2:18'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Make Believe',
+      duration: '3:41',
+      features: 'Foushee'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: '2012',
+      duration: '4:20',
+      features: 'Day Wave'
+    },
+    {
+      artist: artist3._id,
+      album: album8._id,
+      name: 'Few Good Things',
+      duration: '7:08',
+      features: 'Black Thought, Eryn Allen Kane'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Doo Wop',
+      duration: '1:15'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'General',
+      duration: '3:18'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Never',
+      duration: '4:01'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'EdEddnEddy',
+      duration: '2:20'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'D/Vision',
+      duration: '4:25'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Hereditary',
+      duration: '4:03'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'All Bad',
+      duration: '4:51'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Underwear',
+      duration: '3:34'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: '8701',
+      duration: '1:51'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Hoodbooger',
+      duration: '2:36'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'Somebody',
+      duration: '3:35'
+    },
+    {
+      artist: artist4._id,
+      album: album9._id,
+      name: 'LAUDER',
+      duration: '4:02'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Frequency Change',
+      duration: '0:59'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Slick Talk',
+      duration: '4:29'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Westbrook',
+      duration: '3:57',
+      features: 'A$AP Ferg'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Off Deez',
+      duration: '3:33',
+      features: 'J. Cole'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: '151 Rum',
+      duration: '2:36'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Off Da Zoinkys',
+      duration: '3:28'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Workin Out',
+      duration: '3:46'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Tiiied',
+      duration: '4:04',
+      features: '6LACK, Ella Mai'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Skrawberries',
+      duration: '3:38',
+      features: 'BJ The Chicago Kid'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Hot Box',
+      duration: '4:51',
+      features: 'Method Man, Joey Bada$$'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Mounted Up',
+      duration: '3:02'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Just Da Other Day',
+      duration: '3:49'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Despacito Too',
+      duration: '4:14'
+    },
+    {
+      artist: artist4._id,
+      album: album10._id,
+      name: 'Hasta Luege - Bonus',
+      duration: '3:41'
     }
   ]
   await Song.insertMany(songs)
