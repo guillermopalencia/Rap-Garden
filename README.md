@@ -38,11 +38,11 @@
 
 ##### image header 1
 
-![Home Page](https://imgur.com/Xoo1tDF)
+<img src="https://imgur.com/Xoo1tDF" alt="Home Page"/>
 
 ##### image header 2
 
-![First Directory](https://imgur.com/a/ogKi0x3)
+<img src="https://imgur.com/QKbcPs8" alt="First Directory" />
 
 ---
 
