@@ -21,6 +21,9 @@ code {
 
 .AlbumsList:hover {
   cursor: pointer;
+  background-color: #f2b705;
+  transform: scale(1.15);
+  transition: 2s;
 }
 
 .Songlist {
@@ -161,4 +164,8 @@ h1 {
   margin-left: 120px;
   margin-right: 120px;
   background-color: red;
+}
+
+.title {
+  margin-bottom: 20px;
 }

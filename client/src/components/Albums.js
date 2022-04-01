@@ -2,7 +2,7 @@ const Albums = (props) => {
   return (
     <div className="AlbumsList" onClick={props.onClick}>
       <div className="space">
-        <h1>{props.name}</h1>
+        <h1 className="title">{props.name}</h1>
       </div>
       <img className="Albumimg" src={props.image} alt={props.name}></img>
       <h4>
