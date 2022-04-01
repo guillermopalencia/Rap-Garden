@@ -8,7 +8,7 @@ const ListenLater = () => {
 
   useEffect(() => {
     const getSongs = async () => {
-      const response = await axios.post(`http://localhost:3001/api/songs/:id`)
+      const response = await axios.post(`/api/songs/:id`)
       setSongs(response.data.songList)
     }
     getSongs()

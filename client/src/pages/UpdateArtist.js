@@ -42,7 +42,7 @@ const UpdateArtist = (props) => {
       }
       e.preventDefault()
       axios
-        .put(`http://localhost:3001/api/updateartist/${id}`, details)
+        .put(`/api/updateartist/${id}`, details)
         .catch((err) => console.log(err))
       navigate(`/artists`)
     }

@@ -9,7 +9,7 @@ const Artist = (props) => {
   }
 
   const deleteArtist = async (id) => {
-    await axios.delete(`http://localhost:3001/api/artist/${id}`)
+    await axios.delete(`/api/artist/${id}`)
     navigate(`/`)
     navigate(`/artists`)
   }

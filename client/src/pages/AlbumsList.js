@@ -10,9 +10,7 @@ const AlbumsList = () => {
 
   useEffect(() => {
     const getAlbumsByArtist = async () => {
-      const response = await axios.get(
-        `http://localhost:3001/api/artist/albums/${id}`
-      )
+      const response = await axios.get(`/api/artist/albums/${id}`)
       setAlbums(response.data.albumList)
     }
     getAlbumsByArtist()

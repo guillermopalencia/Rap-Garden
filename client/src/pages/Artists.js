@@ -9,7 +9,7 @@ const Artists = () => {
 
   useEffect(() => {
     const getArtist = async () => {
-      const response = await axios.get('http://localhost:3001/api/artists')
+      const response = await axios.get('/api/artists')
       setArtists(response.data.artist)
     }
     getArtist()

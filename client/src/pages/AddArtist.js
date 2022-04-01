@@ -39,9 +39,7 @@ const AddArtist = () => {
         image: image
       }
       e.preventDefault()
-      axios
-        .post('http://localhost:3001/api/artists', details)
-        .catch((err) => console.log(err))
+      axios.post('/api/artists', details).catch((err) => console.log(err))
       navigate(`/artists`)
     }
   }

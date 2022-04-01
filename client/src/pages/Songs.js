@@ -20,9 +20,7 @@ const Songs = () => {
 
   useEffect(() => {
     const getSongs = async () => {
-      const response = await axios.get(
-        `http://localhost:3001/api/albums/songs/${id}`
-      )
+      const response = await axios.get(`/api/albums/songs/${id}`)
       setSongs(response.data.songList)
     }
     getSongs()
