@@ -36,8 +36,9 @@ code {
 .artistcontainer {
   margin: auto;
   display: grid;
-  grid-template-columns: 3fr 800px;
-  width: 70em;
+  grid-template-columns: 50em auto;
+  grid-gap: 1em;
+  width: 100em;
 }
 
 .ArtistList {
@@ -48,7 +49,7 @@ code {
   margin: auto;
 }
 
-.ArtistList:hover {
+#clickme:hover {
   cursor: pointer;
 }
 
@@ -143,4 +144,8 @@ h1 {
   width: 22em;
   height: auto;
   border: 3px solid black;
+}
+
+.artistsection {
+  margin: auto;
 }

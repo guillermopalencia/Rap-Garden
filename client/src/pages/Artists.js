@@ -25,7 +25,7 @@ const Artists = () => {
   return (
     <div>
       <h2> All Artists </h2>
-      <section>
+      <section className="artistsection">
         <div className="artistcontainer">
           {artists.map((artist) => (
             <div key={artist._id}>

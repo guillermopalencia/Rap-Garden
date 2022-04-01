@@ -6,6 +6,7 @@ const UpdateArtist = (props) => {
   const [name, setName] = useState('')
   const [numberofalbums, setNumberOfAlbums] = useState('')
   const [about, setAbout] = useState('')
+  const [image, setImage] = useState('')
 
   const { id } = useParams()
 
@@ -24,6 +25,11 @@ const UpdateArtist = (props) => {
     setAbout(e.target.value)
   }
 
+  const handleImageChange = (e) => {
+    e.preventDefault()
+    setImage(e.target.value)
+  }
+
   let navigate = useNavigate()
 
   const handleOnSubmit = async (e) => {
@@ -31,7 +37,8 @@ const UpdateArtist = (props) => {
       const details = {
         name: name,
         numberofalbums: numberofalbums,
-        about: about
+        about: about,
+        image: image
       }
       e.preventDefault()
       axios
@@ -68,6 +75,15 @@ const UpdateArtist = (props) => {
           type="text"
           name="about"
           value={props.about}
+        />
+      </label>
+      <label>
+        image:
+        <input
+          onChange={handleImageChange}
+          type="text"
+          name="URL"
+          value={props.image}
         />
       </label>
       <button type="submit">Update Artist</button>
