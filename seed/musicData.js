@@ -18,7 +18,7 @@ const main = async () => {
     name: 'Kendrick Lamar',
     numberofalbums: '7',
     about:
-      'Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him.',
+      'Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him. After several years of development, Lamar hit his creative and chart-topping stride in the 2010s. Good Kid, M.A.A.D City (2012), the Grammy-winning To Pimp a Butterfly (2015), and the Grammy- and Pulitzer Prize-winning DAMN. (2017), his three proper major-label albums, have displayed an unmatched mix of inventive wordplay and compelling conceptual narratives.',
     image:
       'https://media.newyorker.com/photos/5f93325daafdd037851bf7d2/16:9/w_2558,h_1439,c_limit/Pearce-KendrickLamar.jpg'
   })
@@ -61,6 +61,26 @@ const main = async () => {
     image: 'https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f'
   })
   album4.save()
+
+  const album5 = await new Album({
+    artist: artist2._id,
+    name: 'DAMN.',
+    numofsongs: '13',
+    releaseyear: '2017',
+    image:
+      'https://media.pitchfork.com/photos/5929c3e8eb335119a49ed80f/1:1/w_600/31d2b6fd.jpg'
+  })
+  album5.save()
+
+  const album6 = await new Album({
+    artist: artist1._id,
+    name: 'Yeezus',
+    numofsongs: '10',
+    releaseyear: '2013',
+    image:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Yeezus_album_cover.png/220px-Yeezus_album_cover.png'
+  })
+  album6.save()
 
   const songs = [
     {
@@ -439,6 +459,153 @@ const main = async () => {
       album: album3._id,
       name: 'Saint Pablo',
       duration: '6:12'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'On Sight',
+      duration: '2:36'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Black Skinhead',
+      duration: '3:08'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'I Am A God',
+      duration: '3:51'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'New Slaves',
+      duration: '4:16'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Hold My Liquor',
+      duration: '5:26'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: "I'm in it",
+      duration: '3:54'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Blood On The Leaves',
+      duration: '5:59'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Guilt Trip',
+      duration: '4:03'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Send It Up',
+      duration: '2:58'
+    },
+    {
+      artist: artist1._id,
+      album: album6._id,
+      name: 'Bound 2',
+      duration: '3:49'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'BLOOD.',
+      duration: '1:58'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'DNA.',
+      duration: '3:05'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'YAH.',
+      duration: '2:40'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'ELEMENT.',
+      duration: '3:28'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'FEEL.',
+      duration: '3:34'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'LOYALTY.',
+      duration: '3:47',
+      features: 'Rihanna'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'PRIDE.',
+      duration: '4:35'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'HUMBLE.',
+      duration: '2:57'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'LUST.',
+      duration: '5:07'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'LOVE.',
+      duration: '3:33',
+      features: 'Zacari'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'XXX.',
+      duration: '4:14',
+      features: 'U2'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'DUCKWORTH.',
+      duration: '4:08'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'FEAR.',
+      duration: '7:40'
+    },
+    {
+      artist: artist2._id,
+      album: album5._id,
+      name: 'GOD.',
+      duration: '4:08'
     }
   ]
   await Song.insertMany(songs)
