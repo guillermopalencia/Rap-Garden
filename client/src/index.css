@@ -17,6 +17,7 @@ code {
   background-color: blanchedalmond;
   width: 22em;
   height: 27em;
+  margin-top: 10px;
 }
 
 .AlbumsList:hover {
@@ -24,7 +25,6 @@ code {
   background-color: #f2b705;
   transform: scale(1.15);
   transition: 2s;
-  margin-top: 10px;
 }
 
 .Songlist {
@@ -165,10 +165,6 @@ h1 {
   margin-left: 120px;
   margin-right: 120px;
   background-color: red;
-}
-
-.title {
-  margin-bottom: 20px;
 }
 
 .about {
