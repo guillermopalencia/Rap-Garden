@@ -8,7 +8,9 @@ const main = async () => {
     name: 'Kanye West',
     numberofalbums: '12',
     about:
-      'One of the most influential and critically lauded artists of the early 21st century, Kanye West went from hip-hop beatmaker to worldwide hitmaker as his production work for artists such as Jay-Z led to a major-label recording contract and, ultimately, a wildly successful solo career that counted an unbroken string of chart-topping, multi-platinum albums and nearly two-dozen Grammy Awards.'
+      'One of the most influential and critically lauded artists of the early 21st century, Kanye West went from hip-hop beatmaker to worldwide hitmaker as his production work for artists such as Jay-Z led to a major-label recording contract and, ultimately, a wildly successful solo career that counted an unbroken string of chart-topping, multi-platinum albums and nearly two-dozen Grammy Awards.',
+    image:
+      'https://www.dailynews.com/wp-content/uploads/2021/12/02-fyffest_dayone_review.0823-9259_.jpg?w=1024'
   })
   artist1.save()
 
@@ -16,7 +18,9 @@ const main = async () => {
     name: 'Kendrick Lamar',
     numberofalbums: '7',
     about:
-      'Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him.'
+      'Indisputably the most acclaimed rap artist of his generation, Kendrick Lamar is one of those rare MCs who has achieved critical and commercial success while earning the respect and support of those who inspired him.',
+    image:
+      'https://media.newyorker.com/photos/5f93325daafdd037851bf7d2/16:9/w_2558,h_1439,c_limit/Pearce-KendrickLamar.jpg'
   })
   artist2.save()
 
