@@ -77,7 +77,7 @@ code {
   margin: auto;
   display: grid;
   grid-template-columns: 3fr 800px;
-  width: 70em;
+  width: 100em;
 }
 
 .Home {
