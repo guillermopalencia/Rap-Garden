@@ -28,7 +28,9 @@ const main = async () => {
     artist: artist2._id,
     name: 'To Pimp A Butterfly',
     numofsongs: '16',
-    releaseyear: '2015'
+    releaseyear: '2015',
+    image:
+      'https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4-9a6d-4f78-8ca8-594ab646d198-bestSizeAvailable.jpeg?width=465&quality=45&auto=format&fit=max&dpr=2&s=58fa24dfd0d588f808f741364ff505f4'
   })
   album1.save()
 
@@ -36,7 +38,8 @@ const main = async () => {
     artist: artist2._id,
     name: 'good kid m.A.A.d city',
     numofsongs: '12',
-    releaseyear: '2012'
+    releaseyear: '2012',
+    image: 'https://m.media-amazon.com/images/I/51CgMxpH7RL._SX425_.jpg'
   })
   album2.save()
 
@@ -44,7 +47,9 @@ const main = async () => {
     artist: artist1._id,
     name: 'The Life of Pablo',
     numofsongs: '20',
-    releaseyear: '2016'
+    releaseyear: '2016',
+    image:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_life_of_pablo_alternate.jpg/220px-The_life_of_pablo_alternate.jpg'
   })
   album3.save()
 
@@ -52,7 +57,8 @@ const main = async () => {
     artist: artist1._id,
     name: 'My Beautiful Dark Twisted Fantasy',
     numofsongs: '12',
-    releaseyear: '2010'
+    releaseyear: '2010',
+    image: 'https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f'
   })
   album4.save()
 
