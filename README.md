@@ -2,6 +2,8 @@
 
 ## Date: 3/28/2022
 
+<img src="https://thumbs.gfycat.com/FatValuableBedbug-size_restricted.gif" alt="uzi fly" />
+
 ### By: Guillermo Palencia
 
 #### [GitHub](https://github.com/guillermopalencia) | [LinkedIn](https://www.linkedin.com/in/guillermo-palencia/)
@@ -36,11 +38,11 @@
 
 ### **_Screenshots_**
 
-##### image header 1
+##### Home Page
 
 <img src="https://imgur.com/Xoo1tDF.jpg" alt="Home Page"/>
 
-##### image header 2
+##### First Directory
 
 <img src="https://imgur.com/QKbcPs8.jpg" alt="First Directory" />
 
