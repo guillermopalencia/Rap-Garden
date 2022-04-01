@@ -4,19 +4,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 const Songs = () => {
   const [songs, setSongs] = useState([])
-  // const [ids, setId] = useState([])
 
   const { id } = useParams()
-
-  // useEffect(() => {
-  //   const getIds = async () => {
-  //     const response = await axios.get(
-  //       `http://localhost:3000/album/songs/${id}`
-  //     )
-  //     setIds(response)
-  //   }
-  //   getIds()
-  // }, [id])
 
   useEffect(() => {
     const getSongs = async () => {

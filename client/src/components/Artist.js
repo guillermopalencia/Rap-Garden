@@ -37,8 +37,3 @@ const Artist = (props) => {
 }
 
 export default Artist
-
-// nav user to /update/{:id}
-// make update artist component
-// update artist page starts with info from artist
-// axios.put('url', req.body)
