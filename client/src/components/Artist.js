@@ -22,8 +22,14 @@ const Artist = (props) => {
       </div>
       <p>{props.about}</p>
       <p>{props.numberofalbums} Albums</p>
-      <button onClick={() => update(props.id)}>update</button>
-      <button onClick={() => deleteArtist(props.id)} id="delete">
+      <button id="updatebutton" onClick={() => update(props.id)}>
+        update
+      </button>
+      <button
+        className="deletebutton"
+        onClick={() => deleteArtist(props.id)}
+        id="delete "
+      >
         delete
       </button>
     </div>

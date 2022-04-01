@@ -149,3 +149,13 @@ h1 {
 .artistsection {
   margin: auto;
 }
+
+#updatebutton {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.deletebutton {
+  margin-left: 120px;
+  margin-right: 120px;
+}
