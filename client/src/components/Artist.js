@@ -20,7 +20,7 @@ const Artist = (props) => {
         <h3>{props.name}</h3>
         <img className="artistimg" src={props.image} alt={props.name}></img>
       </div>
-      <p>{props.about}</p>
+      <p className="about">{props.about}</p>
       <p>{props.numberofalbums} Albums</p>
       <button id="updatebutton" onClick={() => update(props.id)}>
         update

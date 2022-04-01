@@ -169,3 +169,23 @@ h1 {
 .title {
   margin-bottom: 20px;
 }
+
+.about {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+form {
+  padding: 1em;
+  width: 12em;
+  height: 12em;
+  background-color: rgb(118, 33, 230);
+  background-color: rgb(170, 172, 142);
+  border-radius: 10%;
+  /* margin-left: 44%; */
+  margin: auto;
+  margin-top: 200px;
+  color: white;
+  font-family: 'Georgia';
+  cursor: pointer;
+}
