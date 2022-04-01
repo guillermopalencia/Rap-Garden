@@ -6,6 +6,7 @@ const AddArtist = () => {
   const [name, setName] = useState('')
   const [numberofalbums, setNumberOfAlbums] = useState('')
   const [about, setAbout] = useState('')
+  const [image, setImage] = useState('')
 
   const handleNameChange = (e) => {
     e.preventDefault()
@@ -22,6 +23,11 @@ const AddArtist = () => {
     setAbout(e.target.value)
   }
 
+  const handleImageChange = (e) => {
+    e.preventDefault()
+    setImage(e.target.value)
+  }
+
   let navigate = useNavigate()
 
   const handleOnSubmit = async (e) => {
@@ -29,7 +35,8 @@ const AddArtist = () => {
       const details = {
         name: name,
         numberofalbums: numberofalbums,
-        about: about
+        about: about,
+        image: image
       }
       e.preventDefault()
       axios
@@ -56,6 +63,10 @@ const AddArtist = () => {
       <label>
         About:
         <input onChange={handleAboutChange} type="text" name="About" />
+      </label>
+      <label>
+        Image:
+        <input onChange={handleImageChange} type="text" name="URL" />
       </label>
       <button type="submit">Submit new Artist</button>
     </form>

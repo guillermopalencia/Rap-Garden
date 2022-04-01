@@ -33,8 +33,17 @@ code {
   text-align: center;
 }
 
+.artistcontainer {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 800px;
+  width: 70em;
+}
+
 .ArtistList {
   background-color: goldenrod;
+  align-items: center;
+  text-align: center;
   width: 40em;
   margin: auto;
 }
@@ -128,4 +137,10 @@ h1 {
   color: bisque;
   border: #f3776d solid 5px;
   padding: 2px;
+}
+
+.artistimg {
+  width: 22em;
+  height: auto;
+  border: 3px solid black;
 }

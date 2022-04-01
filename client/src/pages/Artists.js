@@ -26,7 +26,7 @@ const Artists = () => {
     <div>
       <h2> All Artists </h2>
       <section>
-        <div>
+        <div className="artistcontainer">
           {artists.map((artist) => (
             <div key={artist._id}>
               <Artist

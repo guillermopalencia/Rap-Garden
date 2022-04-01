@@ -70,7 +70,7 @@ const UpdateArtist = (props) => {
           value={props.about}
         />
       </label>
-      <button type="submit">Submit new Artist</button>
+      <button type="submit">Update Artist</button>
     </form>
   )
 }
