@@ -38,11 +38,11 @@
 
 ##### image header 1
 
-<img src="https://imgur.com/Xoo1tDF" alt="Home Page"/>
+<img src="https://imgur.com/Xoo1tDF.jpg" alt="Home Page"/>
 
 ##### image header 2
 
-<img src="https://imgur.com/QKbcPs8" alt="First Directory" />
+<img src="https://imgur.com/QKbcPs8.jpg" alt="First Directory" />
 
 ---
 
@@ -56,7 +56,7 @@
 
 ### **_Credits_**
 
-##### Artist Images: [Gogle Search](https://google.com)
+##### Artist Images: [Google Search](https://google.com)
 
 ##### Markdown Guide: [ia.net](https://ia.net/writer/support/general/markdown-guide)
 
