@@ -49,7 +49,7 @@ const UpdateArtist = (props) => {
   }
 
   return (
-    <form onSubmit={handleOnSubmit}>
+    <form className="updateform" onSubmit={handleOnSubmit}>
       <label>
         name:
         <input
