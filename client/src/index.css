@@ -37,6 +37,10 @@ code {
   text-align: center;
 }
 
+.Songlist:hover {
+  background-color: rgb(117, 115, 115);
+}
+
 .artistcontainer {
   margin: auto;
   display: grid;
