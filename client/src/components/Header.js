@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <header>
-      <nav>
+      <nav className="nav">
         <Link to="/">Home</Link>
-        <br></br>
         <Link to="/artists">Artists</Link>
-        <Link to="/songs/:id">songs</Link>
       </nav>
     </header>
   )

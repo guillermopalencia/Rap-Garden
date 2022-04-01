@@ -25,9 +25,12 @@ code {
 
 .Songlist {
   background-color: rgb(92, 90, 90);
+  display: grid;
+  grid-template-columns: 10em 1100px;
   margin: auto;
-  width: 20em;
-  border: 1px solid black;
+  width: 50em;
+  border-top: 1px solid black;
+  text-align: center;
 }
 
 .ArtistList {
@@ -60,16 +63,17 @@ code {
 .container {
   margin: auto;
   display: grid;
-  grid-template-columns: 1em auto;
+  grid-template-columns: 3fr 800px;
   width: 70em;
 }
 
 .Home {
   background-image: url('https://pbs.twimg.com/media/D33kdplUEAIeEQW.jpg:large');
-  height: 1200px;
+  height: 1300px;
   background-size: 100% 100%;
   color: white;
   background-attachment: local;
+  object-fit: fill;
 }
 
 body {
@@ -83,4 +87,28 @@ body {
 .click:hover {
   transform: scale(1.2);
   transition: 0.25s;
+}
+
+.nav {
+  display: flex;
+  font-family: 'Ramabhadra';
+  justify-content: space-around;
+  background-color: #d68594;
+  height: 60px;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 40px;
+}
+
+.clock {
+  height: 2em;
+  width: auto;
+  border: none;
+}
+
+.Home .nav {
+  display: none;
 }

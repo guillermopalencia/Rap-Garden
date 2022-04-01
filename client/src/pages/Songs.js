@@ -32,13 +32,21 @@ const Songs = () => {
     <div>
       <h1> TrackList </h1>
       <section>
-        <div>
+        <div className="Container">
+          <div className="Songlist">
+            <h5>
+              Title <br></br>& <br></br>Features
+            </h5>
+            <img
+              className="clock Songlist"
+              src="https://icon-library.com/images/duration-icon/duration-icon-11.jpg"
+            ></img>
+          </div>
           {songs.map((song) => (
             <div key={song._id} className="Songlist">
               <h3>{song.name}</h3>
-              <p>{song.features}</p>
               <p>{song.duration}</p>
-              <button className="Add">Add to Listen Later </button>
+              <p>{song.features}</p>
             </div>
           ))}
         </div>
