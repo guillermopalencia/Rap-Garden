@@ -153,9 +153,12 @@ h1 {
 #updatebutton {
   margin-left: 120px;
   margin-right: 120px;
+  background-color: #f2b705;
+  margin-bottom: 10px;
 }
 
 .deletebutton {
   margin-left: 120px;
   margin-right: 120px;
+  background-color: red;
 }
